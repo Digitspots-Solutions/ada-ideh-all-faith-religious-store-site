@@ -1,0 +1,42 @@
+{
+  "businessName": "Ada-Ideh All Faith Religious Store",
+  "industry": "Religious Items Manufacturing & Retail",
+  "tone": "warm, respectful, welcoming",
+  "tagline": "Your Trusted Source for Quality Religious Items Across All Faiths",
+  "sections": [
+    {
+      "id": "hero",
+      "name": "Hero",
+      "copy": "Welcome to Ada-Ideh All Faith Religious Store. We manufacture and supply premium religious items for Christian, Islamic, and traditional worship communities across Nigeria. Located in Idemili North, we serve individuals, churches, mosques, and religious organizations with integrity and respect for all faiths.",
+      "imagePrompt": "Photorealistic image of a warm, inviting Nigerian religious store interior with neatly arranged shelves displaying crosses, rosaries, prayer beads, candles, and religious texts, soft golden lighting creating a peaceful atmosphere, customers of different faiths browsing respectfully, wooden displays with Nigerian craftsmanship details",
+      "layout": "centered"
+    },
+    {
+      "id": "about",
+      "name": "About Us",
+      "copy": "Ada-Ideh All Faith Religious Store is a leading manufacturer and supplier of religious items in Idemili North, Anambra State. We understand the sacred importance of worship items in the spiritual lives of Nigerians. Our commitment is to provide high-quality, authentic religious articles that honor the traditions of Christianity, Islam, and indigenous African faiths. From our facility on Azodo Street, Npor Agu, we serve communities throughout Nigeria with products crafted with reverence and attention to detail. Whether you need items for personal devotion, congregational worship, or special ceremonies, we offer a comprehensive selection manufactured to the highest standards of quality and spiritual significance.",
+      "imagePrompt": "Photorealistic image of a modern Nigerian manufacturing workshop with skilled artisans carefully crafting religious items, crosses being polished, prayer beads being assembled, natural light streaming through windows, organized workstations with quality materials, professional yet warm atmosphere, Nigerian workers in modest attire focused on their craft",
+      "layout": "split"
+    },
+    {
+      "id": "services",
+      "name": "Our Products & Services",
+      "copy": "**Christian Religious Items**: Crosses, crucifixes, rosaries, communion sets, baptismal items, religious statues, church candles, holy water fonts, prayer books, and devotional materials.\n\n**Islamic Religious Items**: Prayer mats, tasbihs (prayer beads), Quranic stands, Islamic wall art, hijabs, kufis, attar oils, miswak sticks, and Ramadan essentials.\n\n**Traditional & Interfaith Items**: Traditional prayer beads, spiritual candles, incense, meditation items, and ceremonial accessories.\n\n**Custom Manufacturing**: We manufacture bulk orders for churches, mosques, religious organizations, and retailers. Custom designs available to meet specific spiritual requirements.\n\n**Wholesale & Retail**: Competitive pricing for bulk purchases and individual retail sales. Delivery available across Anambra State and Nigeria-wide shipping.",
+      "imagePrompt": "Photorealistic product display showcasing diverse religious items arranged respectfully side by side: elegant wooden crosses, colorful Islamic prayer mats, gleaming rosaries, traditional African prayer beads, candles, and religious texts, all beautifully lit on a rich fabric backdrop with Nigerian textile patterns, professional product photography style",
+      "layout": "grid"
+    },
+    {
+      "id": "contact",
+      "name": "Visit Us Today",
+      "copy": "Experience the Ada-Ideh difference in person. Visit our store and manufacturing facility at Azodo Street, Npor Agu, Idemili North, where our knowledgeable team is ready to assist you with respect and understanding of your faith's requirements. We welcome customers from all religious backgrounds and are committed to serving your spiritual needs with dignity and professionalism. For inquiries about bulk orders, custom manufacturing, or product availability, contact us today. We look forward to serving you.",
+      "imagePrompt": "Photorealistic image of a welcoming Nigerian storefront on a clean street in Anambra State, modern signage reading 'Ada-Ideh All Faith Religious Store', customers of different faiths entering and exiting, well-maintained exterior with religious symbols tastefully displayed, lush greenery, blue Nigerian sky, inviting entrance with open doors",
+      "layout": "centered"
+    }
+  ],
+  "contact": {
+    "phone": "+234 803 941 2980",
+    "email": "info@adaidehstore.ng",
+    "address": "Azodo Street, Npor Agu, Idemili North, Anambra State, Nigeria",
+    "whatsapp": "https://wa.me/2348039412980"
+  }
+}
