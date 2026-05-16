@@ -20,15 +20,8 @@
             --border-radius: 10px;
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
 
         body {
             font-family: var(--font-body);
@@ -44,14 +37,8 @@
         }
 
         @keyframes fadeUp {
-            from {
-                opacity: 0;
-                transform: translateY(24px);
-            }
-            to {
-                opacity: 1;
-                transform: none;
-            }
+            from { opacity: 0; transform: translateY(24px); }
+            to { opacity: 1; transform: none; }
         }
 
         /* Navigation */
@@ -95,11 +82,8 @@
             transition: color 0.3s ease;
         }
 
-        .nav-links a:hover {
-            color: var(--color-accent);
-        }
+        .nav-links a:hover { color: var(--color-accent); }
 
-        /* Mobile Menu Button */
         .mobile-menu-btn {
             display: none;
             flex-direction: column;
@@ -115,19 +99,10 @@
             transform-origin: center;
         }
 
-        .mobile-menu-btn.active span:nth-child(1) {
-            transform: rotate(45deg) translate(6px, 6px);
-        }
+        .mobile-menu-btn.active span:nth-child(1) { transform: rotate(45deg) translate(6px, 6px); }
+        .mobile-menu-btn.active span:nth-child(2) { opacity: 0; }
+        .mobile-menu-btn.active span:nth-child(3) { transform: rotate(-45deg) translate(6px, -6px); }
 
-        .mobile-menu-btn.active span:nth-child(2) {
-            opacity: 0;
-        }
-
-        .mobile-menu-btn.active span:nth-child(3) {
-            transform: rotate(-45deg) translate(6px, -6px);
-        }
-
-        /* Mobile Menu */
         .mobile-menu {
             position: fixed;
             top: 70px;
@@ -141,17 +116,9 @@
             padding: 2rem;
         }
 
-        .mobile-menu.active {
-            right: 0;
-        }
-
-        .mobile-menu ul {
-            list-style: none;
-        }
-
-        .mobile-menu ul li {
-            margin-bottom: 1.5rem;
-        }
+        .mobile-menu.active { right: 0; }
+        .mobile-menu ul { list-style: none; }
+        .mobile-menu ul li { margin-bottom: 1.5rem; }
 
         .mobile-menu ul a {
             text-decoration: none;
@@ -163,9 +130,7 @@
             padding: 0.5rem 0;
         }
 
-        .mobile-menu ul a:hover {
-            color: var(--color-accent);
-        }
+        .mobile-menu ul a:hover { color: var(--color-accent); }
 
         /* Hero Section */
         #hero {
@@ -182,26 +147,22 @@
 
         .hero-bg {
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
             object-fit: cover;
             z-index: -2;
         }
 
         .hero-overlay {
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.55);
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.6);
             z-index: -1;
         }
 
         .hero-content {
-            max-width: 900px;
+            max-width: 800px;
             padding: 0 2rem;
             z-index: 1;
         }
@@ -214,15 +175,9 @@
         }
 
         .hero-tagline {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             margin-bottom: 2rem;
             font-weight: 300;
-        }
-
-        .hero-text {
-            font-size: 1.1rem;
-            margin-bottom: 2rem;
-            line-height: 1.8;
         }
 
         .cta-button {
@@ -244,20 +199,13 @@
             box-shadow: 0 6px 20px rgba(255, 41, 4, 0.4);
         }
 
-        /* Section Styling */
+        /* Sections */
         section {
             padding: 80px 2rem;
             animation: fadeUp 0.6s ease forwards;
         }
 
-        section:nth-child(2) { animation-delay: 0.1s; }
-        section:nth-child(3) { animation-delay: 0.2s; }
-        section:nth-child(4) { animation-delay: 0.3s; }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+        .container { max-width: 1200px; margin: 0 auto; }
 
         h2 {
             font-size: 3rem;
@@ -271,17 +219,13 @@
         h2::after {
             content: '';
             position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 80px;
-            height: 4px;
+            bottom: 0; left: 0;
+            width: 80px; height: 4px;
             background: var(--color-accent);
         }
 
-        /* About Section */
-        #about {
-            background: white;
-        }
+        /* About */
+        #about { background: white; }
 
         .about-content {
             display: grid;
@@ -298,15 +242,11 @@
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
         }
 
-        .about-text {
-            font-size: 1.1rem;
-            line-height: 1.8;
-        }
+        .about-text { font-size: 1.05rem; line-height: 1.9; }
+        .about-text p + p { margin-top: 1rem; }
 
-        /* Services Section */
-        #services {
-            background: var(--color-surface);
-        }
+        /* Services */
+        #services { background: var(--color-surface); }
 
         .services-grid {
             display: grid;
@@ -329,68 +269,47 @@
         }
 
         .service-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
+            font-size: 1.4rem;
+            margin-bottom: 0.75rem;
             color: var(--color-primary);
         }
 
-        .service-card p {
-            line-height: 1.8;
-        }
+        .service-card p { line-height: 1.7; font-size: 0.98rem; }
 
-        .services-image {
-            width: 100%;
-            height: 400px;
-            object-fit: cover;
-            border-radius: var(--border-radius);
-            margin-bottom: 3rem;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
-        }
+        /* Contact */
+        #contact { background: white; text-align: center; }
 
-        /* Contact Section */
-        #contact {
-            background: white;
-            text-align: center;
-        }
-
-        .contact-content {
-            max-width: 800px;
-            margin: 0 auto;
-        }
+        .contact-content { max-width: 800px; margin: 0 auto; }
 
         .contact-image {
             width: 100%;
-            height: 400px;
+            height: 380px;
             object-fit: cover;
             border-radius: var(--border-radius);
-            margin-bottom: 3rem;
+            margin-bottom: 2.5rem;
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
         }
 
         .contact-text {
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             line-height: 1.8;
-            margin-bottom: 3rem;
+            margin-bottom: 2.5rem;
         }
 
         .contact-info {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
         }
 
         .contact-item {
             background: var(--color-surface);
-            padding: 2rem;
+            padding: 1.5rem;
             border-radius: var(--border-radius);
         }
 
-        .contact-item h3 {
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
-            color: var(--color-primary);
-        }
+        .contact-item h3 { font-size: 1.1rem; margin-bottom: 0.75rem; }
 
         .contact-item a {
             color: var(--color-secondary-accent);
@@ -398,9 +317,7 @@
             font-weight: 500;
         }
 
-        .contact-item a:hover {
-            color: var(--color-accent);
-        }
+        .contact-item a:hover { color: var(--color-accent); }
 
         .whatsapp-button {
             display: inline-block;
@@ -422,13 +339,10 @@
             box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
         }
 
-        /* WhatsApp Floating Button */
         .whatsapp-float {
             position: fixed;
-            bottom: 30px;
-            right: 30px;
-            width: 60px;
-            height: 60px;
+            bottom: 30px; right: 30px;
+            width: 60px; height: 60px;
             background: #25D366;
             color: white;
             border-radius: 50%;
@@ -447,7 +361,6 @@
             box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
         }
 
-        /* Footer */
         footer {
             background: var(--color-primary);
             color: white;
@@ -455,77 +368,24 @@
             padding: 2rem;
         }
 
-        /* Responsive */
-        @media (max-width: 1024px) {
-            h2 {
-                font-size: 2.5rem;
-            }
-
-            .hero-content h1 {
-                font-size: 3rem;
-            }
-        }
-
         @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-            
-            .mobile-menu-btn {
-                display: flex;
-            }
-
-            section {
-                padding: 48px 1.5rem;
-            }
-
-            h2 {
-                font-size: 2rem;
-                margin-bottom: 2rem;
-            }
-
-            .hero-content h1 {
-                font-size: 2rem;
-            }
-
-            .hero-tagline {
-                font-size: 1.2rem;
-            }
-
-            .hero-text {
-                font-size: 1rem;
-            }
-
-            .about-content {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-
-            .about-image,
-            .services-image,
-            .contact-image {
-                height: 300px;
-            }
-
-            .services-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .contact-info {
-                grid-template-columns: 1fr;
-            }
-
-            .whatsapp-float {
-                width: 50px;
-                height: 50px;
-                font-size: 1.5rem;
-                bottom: 20px;
-                right: 20px;
-            }
+            .nav-links { display: none; }
+            .mobile-menu-btn { display: flex; }
+            section { padding: 48px 1.5rem; }
+            h2 { font-size: 2rem; margin-bottom: 2rem; }
+            .hero-content h1 { font-size: 2rem; }
+            .hero-tagline { font-size: 1.1rem; }
+            .about-content { grid-template-columns: 1fr; gap: 2rem; }
+            .about-image { height: 280px; }
+            .contact-image { height: 260px; }
+            .services-grid { grid-template-columns: 1fr; }
+            .contact-info { grid-template-columns: 1fr; }
+            .whatsapp-float { width: 50px; height: 50px; font-size: 1.5rem; bottom: 20px; right: 20px; }
         }
     </style>
 </head>
 <body>
+
     <!-- Navigation -->
     <nav>
         <div class="container">
@@ -537,9 +397,7 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="mobile-menu-btn">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span></span><span></span><span></span>
             </div>
         </div>
     </nav>
@@ -554,69 +412,74 @@
         </ul>
     </div>
 
-    <!-- Hero Section -->
+    <!-- Hero — candles & altar light, spiritual atmosphere -->
     <section id="hero">
-        <img src="https://images.pexels.com/photos/13128709/pexels-photo-13128709.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Ada-Ideh Religious Store" class="hero-bg">
+        <img
+            src="https://images.pexels.com/photos/3571552/pexels-photo-3571552.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=900&w=1400"
+            alt="Candles and spiritual light"
+            class="hero-bg">
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <h1>Ada-Ideh All Faith Religious Store</h1>
-            <p class="hero-tagline">Your Trusted Source for Quality Religious Items Across All Faiths</p>
-            <p class="hero-text">Welcome to Ada-Ideh All Faith Religious Store. We manufacture and supply premium religious items for Christian, Islamic, and traditional worship communities across Nigeria. Located in Idemili North, we serve individuals, churches, mosques, and religious organizations with integrity and respect for all faiths.</p>
+            <p class="hero-tagline">Quality Religious Items for Every Faith, Every Worshipper</p>
             <a href="#contact" class="cta-button">Visit Us Today</a>
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About -->
     <section id="about">
         <div class="container">
             <h2>About Us</h2>
             <div class="about-content">
-                <img src="https://images.pexels.com/photos/32184490/pexels-photo-32184490.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Ada-Ideh Manufacturing" class="about-image">
+                <!-- Prayer beads / rosary close-up — universal across faiths -->
+                <img
+                    src="https://images.pexels.com/photos/208371/pexels-photo-208371.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    alt="Prayer beads and religious items"
+                    class="about-image">
                 <div class="about-text">
-                    <p>Ada-Ideh All Faith Religious Store is a leading manufacturer and supplier of religious items in Idemili North, Anambra State. We understand the sacred importance of worship items in the spiritual lives of Nigerians. Our commitment is to provide high-quality, authentic religious articles that honor the traditions of Christianity, Islam, and indigenous African faiths.</p>
-                    <p>From our facility on Azodo Street, Npor Agu, we serve communities throughout Nigeria with products crafted with reverence and attention to detail. Whether you need items for personal devotion, congregational worship, or special ceremonies, we offer a comprehensive selection manufactured to the highest standards of quality and spiritual significance.</p>
+                    <p>Ada-Ideh All Faith Religious Store is a leading manufacturer and supplier of religious items in Idemili North, Anambra State. We understand the sacred importance of worship items in the spiritual lives of Nigerians.</p>
+                    <p>From our facility on Azodo Street, Npor Agu, we serve communities throughout Nigeria with products crafted with reverence and attention to detail — for Christian, Islamic, and indigenous African worship traditions alike.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- Products & Services -->
     <section id="services">
         <div class="container">
-            <h2>Our Products & Services</h2>
-            <img src="https://images.pexels.com/photos/14934012/pexels-photo-14934012.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Religious Products" class="services-image">
+            <h2>Our Products</h2>
             <div class="services-grid">
                 <div class="service-card">
-                    <h3>Christian Religious Items</h3>
-                    <p>Crosses, crucifixes, rosaries, communion sets, baptismal items, religious statues, church candles, holy water fonts, prayer books, and devotional materials.</p>
+                    <h3>Christian Items</h3>
+                    <p>Crosses, rosaries, communion sets, baptismal items, church candles, holy water fonts, and devotional materials.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Islamic Religious Items</h3>
-                    <p>Prayer mats, tasbihs (prayer beads), Quranic stands, Islamic wall art, hijabs, kufis, attar oils, miswak sticks, and Ramadan essentials.</p>
+                    <h3>Islamic Items</h3>
+                    <p>Prayer mats, tasbihs, Quranic stands, Islamic wall art, attar oils, miswak sticks, and Ramadan essentials.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Traditional & Interfaith Items</h3>
-                    <p>Traditional prayer beads, spiritual candles, incense, meditation items, and ceremonial accessories.</p>
+                    <h3>Traditional & Interfaith</h3>
+                    <p>Spiritual candles, incense, prayer beads, meditation items, and ceremonial accessories for all traditions.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Custom Manufacturing</h3>
-                    <p>We manufacture bulk orders for churches, mosques, religious organizations, and retailers. Custom designs available to meet specific spiritual requirements.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Wholesale & Retail</h3>
-                    <p>Competitive pricing for bulk purchases and individual retail sales. Delivery available across Anambra State and Nigeria-wide shipping.</p>
+                    <h3>Wholesale & Custom Orders</h3>
+                    <p>Bulk manufacturing for churches, mosques, and retailers. Custom designs available. Nigeria-wide delivery.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact -->
     <section id="contact">
         <div class="container">
             <div class="contact-content">
                 <h2>Visit Us Today</h2>
-                <img src="https://images.pexels.com/photos/34313607/pexels-photo-34313607.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Ada-Ideh Store Location" class="contact-image">
-                <p class="contact-text">Experience the Ada-Ideh difference in person. Visit our store and manufacturing facility at Azodo Street, Npor Agu, Idemili North, where our knowledgeable team is ready to assist you with respect and understanding of your faith's requirements. We welcome customers from all religious backgrounds and are committed to serving your spiritual needs with dignity and professionalism. For inquiries about bulk orders, custom manufacturing, or product availability, contact us today. We look forward to serving you.</p>
+                <!-- Storefront / shop entrance feel -->
+                <img
+                    src="https://images.pexels.com/photos/5632400/pexels-photo-5632400.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    alt="Ada-Ideh Store"
+                    class="contact-image">
+                <p class="contact-text">Visit our store and manufacturing facility in Idemili North. Our team is ready to assist customers of all faiths with respect and professionalism. Contact us for bulk orders, custom manufacturing, or product availability.</p>
                 <div class="contact-info">
                     <div class="contact-item">
                         <h3>Phone</h3>
@@ -628,7 +491,7 @@
                     </div>
                     <div class="contact-item">
                         <h3>Address</h3>
-                        <p>Azodo Street, Npor Agu, Idemili North, Anambra State, Nigeria</p>
+                        <p>Azodo Street, Npor Agu, Idemili North, Anambra State</p>
                     </div>
                 </div>
                 <a href="https://wa.me/2348039412980" class="whatsapp-button" target="_blank">Message Us on WhatsApp</a>
@@ -641,11 +504,10 @@
         <p>&copy; 2025 Ada-Ideh All Faith Religious Store. All rights reserved.</p>
     </footer>
 
-    <!-- WhatsApp Floating Button -->
+    <!-- WhatsApp Float -->
     <a href="https://wa.me/2348039412980" class="whatsapp-float" target="_blank">💬</a>
 
     <script>
-        // Mobile menu toggle
         const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
         const mobileMenu = document.querySelector('.mobile-menu');
 
@@ -655,9 +517,7 @@
                 mobileMenu.classList.toggle('active');
             });
 
-            // Close mobile menu when clicking a link
-            const mobileLinks = mobileMenu.querySelectorAll('a');
-            mobileLinks.forEach(link => {
+            mobileMenu.querySelectorAll('a').forEach(link => {
                 link.addEventListener('click', () => {
                     mobileMenuBtn.classList.remove('active');
                     mobileMenu.classList.remove('active');
